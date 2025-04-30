@@ -1,0 +1,194 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f1e3; /* Light sandy color to represent the desert */
+    color: #3e3b35; /* Dark brown text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+#header {
+    width: 100%;
+    background-color: #a86310; /* Desert sand color */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#nav {
+    display: flex;
+    justify-content: center;
+}
+
+#nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 14px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 15px;
+}
+
+#nav a:hover {
+    background-color: #e98f35; /* Warm accent color for hover */
+    border-radius: 5px;
+}
+
+/* Container Style */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+/* Region Info */
+.region-info {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.region-info h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #000; /* Noir pour le texte */
+    font-weight: bold;
+    text-align: center;
+}
+
+.region-info p {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #3f3f3f; 
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Region Card Styling */
+.region-card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-image: url(''); /* Adding a sand texture */
+    background-size: cover;
+    background-position: center;
+}
+
+.region-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.region-card h3 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #000; /* Noir pour le texte */
+    font-weight: bold;
+    text-align: center;
+}
+.region-card p {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #3b3a3a; /* Noir pour le texte */
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Image Styling */
+img {
+    width: 100%;
+    max-width: 800px;
+    margin: 40px 0;
+    border-radius: 10px;
+    border: 5px solid #e98f35; /* Border to highlight the image */
+}
+
+/* Button Styling */
+button {
+    background-color: #a86310; /* Desert sand color */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #e98f35; /* Highlight color */
+}
+/* Ajoutez ce style CSS dans votre fichier page2.css */
+
+/* Style pour l'image galerie */
+.image-gallery {
+    display: flex;
+    justify-content: space-between; /* Espacement égal entre les images */
+    gap: 15px; /* Espacement entre les images */
+    margin-top: 20px;
+    background-color: #000; /* Fond noir autour des images */
+    padding: 20px; /* Espacement autour des images à l'intérieur du cadre */
+    border-radius: 10px; /* Bords arrondis pour le cadre */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère autour du cadre */
+}
+
+/* Style pour chaque image */
+.image-gallery img {
+    width: 30%; /* Chaque image prend 30% de la largeur du parent */
+    height: auto; /* Garde les proportions des images */
+    border-radius: 8px; /* Arrondi des bords des images */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Ombre autour de chaque image */
+    transition: transform 0.3s ease; /* Animation pour un effet au survol */
+}
+
+/* Effet au survol des images */
+.image-gallery img:hover {
+    transform: scale(1.05); /* Légère augmentation de la taille au survol */
+}
+/* Centrer le texte dans <h1> et changer la couleur */
+.sahara-details h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #000; /* Noir pour le texte */
+    font-weight: bold;
+    text-align: center; /* Centrer le texte */
+}
+
+/* Centrer et styliser les titres des sections h2 */
+.history-section h2, .culture-section h2, .lculture-section h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #262525; /* Noir pour le texte */
+    font-weight: bold;
+    text-align: center; /* Centrer le texte */
+}
+
+/* Centrer le texte dans <h1> et changer la couleur */
+.sahara-details h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #000; /* Noir pour le texte */
+    font-weight: bold;
+    text-align: center; /* Centrer le texte */
+}
+
+/* Style pour les sections de l'historique, culture et paysages */
+.history-section, .culture-section, .lculture-section {
+    margin-bottom: 40px;
+}

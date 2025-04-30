@@ -1,0 +1,157 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f1e3; /* Light sandy color to represent the desert */
+    color: #3e3b35; /* Dark brown text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+#header {
+    width: 100%;
+    background-color: #a86310; /* Desert sand color */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#nav {
+    display: flex;
+    justify-content: center;
+}
+
+#nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 14px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 15px;
+}
+
+#nav a:hover {
+    background-color: #e98f35; /* Warm accent color for hover */
+    border-radius: 5px;
+}
+
+/* Container Style */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+/* About Section Styling */
+.about-section {
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-section h1, .history-card h3 {
+    font-size: 36px;  /* Added font size */
+    margin-bottom: 15px;
+    color: #000; /* Noir pour le texte */
+    font-weight: bold;
+    text-align: center; /* Centrer le texte */
+}
+
+.about-section p, .history-card p {
+    font-size: 20px;  /* Adjusted font size for better readability */
+    line-height: 1.6;
+    color: #000; /* Noir pour le texte */
+    font-weight: normal;
+    text-align: center; /* Center the text */
+    margin-bottom: 30px;
+    transition: transform 0.3s ease; /* Added transition for smooth effect */
+}
+
+.about-section p:hover {
+    transform: translateY(-10px); /* Added transform effect on hover */
+}
+
+/* History Card Styling */
+.history-card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.history-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.about-section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+img {
+    width: 100%;
+    max-width: 600px; /* Medium size */
+    margin: 40px auto;
+    display: block; /* Centers the image */
+    border-radius: 10px;
+    border: 5px solid #e98f35; /* Border to highlight the image */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow around the image */
+    background-color: #000;
+}
+
+/* Style pour les sections de l'historique, culture et paysages */
+.about-section, .history-card {
+    margin-bottom: 40px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    /* Adjust font sizes for smaller screens */
+    .about-section h1, .history-card h3 {
+        font-size: 28px;
+    }
+
+    .about-section p, .history-card p {
+        font-size: 18px;
+    }
+
+    img {
+        max-width: 100%; /* Allow images to be fully responsive */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjust layout for very small screens (mobile) */
+    #nav {
+        flex-direction: column;
+    }
+
+    #nav a {
+        margin: 10px 0;
+    }
+
+    .about-section h1, .history-card h3 {
+        font-size: 24px;
+    }
+
+    .about-section p, .history-card p {
+        font-size: 16px;
+    }
+}
